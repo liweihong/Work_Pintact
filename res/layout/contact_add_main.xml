@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+
+    <!-- width is computed as (600dp - 3*margin ) / 2 = 210dp -->
+    <ImageView style="@style/CAMImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/contact_pin"
+        android:id="@+id/cam_pin"
+        />
+
+    <ImageView style="@style/CAMImage"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/contact_search"
+        android:id="@+id/cam_search"
+        />
+
+    <ImageView style="@style/CAMImage"
+        android:layout_below="@+id/cam_pin"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/contact_add"
+        android:id="@+id/cam_add"
+        />
+
+    
+</RelativeLayout>

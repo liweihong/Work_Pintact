@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <EditText
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:background="@color/transparency"
+        android:textColor="@color/profile_add"
+        android:textSize="@dimen/profile_new_text_size"
+        android:text="@string/pcn_label_addr"
+    	android:singleLine="true"
+    	android:textColorHint="@color/profile_title"
+        android:hint="@string/pcn_field_name"
+        android:id="@+id/input_label"
+    />
+    
+    <EditText
+        android:layout_below="@+id/input_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:layout_alignParentLeft="true"
+    	android:layout_toLeftOf="@+id/view_id1"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:textColorHint="@color/profile_title"
+    	android:gravity="left"
+    	android:singleLine="true"
+    	android:inputType="textPostalAddress"
+    	android:background="@color/transparency"
+    	android:hint="@string/pcn_addr_line1"	
+    	android:id="@+id/input_id1"
+    />
+    
+    <TextView
+    	android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentRight="true"
+    	android:gravity="center_vertical"
+    	android:padding="10dp"
+    	android:background="@color/red"
+    	android:clickable="true"
+    	android:text="@string/pcn_btn_delete"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:id="@+id/view_id1"
+    />
+    
+    <EditText
+        android:layout_below="@+id/input_id1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:layout_alignParentLeft="true"
+    	android:layout_toLeftOf="@+id/input_state"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:textColorHint="@color/profile_title"
+    	android:gravity="left"
+    	android:inputType="textCapWords"
+    	android:singleLine="true"
+    	android:background="@color/transparency"
+    	android:hint="@string/pcn_addr_city"	
+    	android:id="@+id/input_city"
+    />
+
+    <EditText
+        android:layout_below="@+id/input_id1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_centerHorizontal="true"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:textColorHint="@color/profile_title"
+    	android:gravity="left"
+    	android:singleLine="true"
+    	android:inputType="textCapCharacters"
+    	android:background="@color/transparency"
+    	android:hint="@string/pcn_addr_state"	
+    	android:id="@+id/input_state"
+    />
+
+    <EditText
+        android:layout_below="@+id/input_id1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_toRightOf="@+id/input_state"
+    	android:layout_marginLeft="80dp"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:textColorHint="@color/profile_title"
+    	android:gravity="left"
+    	android:inputType="number"
+    	android:singleLine="true"
+    	android:maxLength="5"
+    	android:background="@color/transparency"
+    	android:hint="@string/pcn_addr_zip"	
+    	android:id="@+id/input_zip"
+    />
+    
+    
+    <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:layout_below="@+id/input_city"
+    	android:layout_marginTop="4dp"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:background="@color/lr_hint_bg"
+        android:id="@+id/addr_sep"
+        />
+    
+    
+
+</RelativeLayout>

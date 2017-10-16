@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/login_congrats_bg"
+    android:id="@+id/profile_edit_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+        <EditText
+            android:id="@+id/pcn_profile_name"
+            style="@style/PCNProfileName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textCapWords" />
+        
+        <TextView
+            android:id="@+id/pcn_sep_name"
+            style="@style/PCNSep"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/pcn_profile_name"
+            android:layout_marginLeft="@dimen/profile_side_margin"
+            android:layout_marginRight="@dimen/profile_side_margin"
+            android:layout_marginTop="@dimen/profile_new_top" />
+
+        <!-- Add image and name info -->
+        <RelativeLayout
+            android:layout_width="match_parent" 
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pcn_sep_name"
+            android:id="@+id/pcn_add_image_lo"
+            android:layout_marginTop="@dimen/profile_new_top"
+            >
+            
+            <ImageView style="@style/PCNAddImage"
+                android:layout_width="@dimen/pcn_image_size"
+                android:layout_height="@dimen/pcn_image_size"
+                android:contentDescription="@string/dummy"
+                android:id="@+id/pcn_add_image"
+                android:onClick="onUploadProfImage"
+                />
+            
+	        <RelativeLayout
+	            android:layout_width="wrap_content" 
+	            android:layout_height="wrap_content"
+	            android:layout_toRightOf="@+id/pcn_add_image"
+	            android:layout_marginLeft="20dp"
+	            android:layout_alignTop="@+id/pcn_add_image"
+	            android:layout_alignBottom="@+id/pcn_add_image"
+       			android:layout_marginRight="@dimen/profile_side_margin"
+	            >
+	            
+	            <EditText style="@style/PCNTitleName"
+	                android:id="@+id/pcn_first_name"
+					android:hint="@string/pcn_first_name"	                
+	                />
+	            
+	            <EditText style="@style/PCNTitleName"
+	                android:id="@+id/pcn_middle_name"
+	                android:layout_alignParentRight="true"
+					android:hint="@string/lr_middle_name"	                
+	                />
+	            	            
+	            <EditText style="@style/PCNTitleName"
+	                android:id="@+id/pcn_last_name"
+	                android:layout_below="@+id/pcn_first_name"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+					android:hint="@string/pcn_last_name"	                
+	                />
+	            <EditText style="@style/PCNTitleName"
+	                android:id="@+id/pcn_title"
+	                android:layout_below="@+id/pcn_last_name"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+					android:hint="@string/pcn_title"	                
+	                />
+	            <EditText style="@style/PCNTitleName"
+	                android:id="@+id/pcn_company"
+	                android:layout_below="@+id/pcn_title"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+					android:hint="@string/pcn_company"	                
+	                />
+	            	            	            	            
+	      	</RelativeLayout>
+        </RelativeLayout>
+        
+        <!-- Add phone number -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/first_rlo"
+	        android:layout_below="@+id/pcn_add_image_lo">
+
+	        <TextView style="@style/PCNSep"
+            android:id="@+id/first_rlo_sep"
+        	android:layout_height="1dp" />
+	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/first_rlo_sep"
+	            android:id="@+id/pcn_phone_lo" >
+
+	            <ImageView style="@style/PCNAddImage"
+		            android:id="@+id/pcn_phone_image"
+		    	    android:contentDescription="@string/dummy"
+		            android:src="@drawable/prof_row3"
+		            />
+		 	</LinearLayout>
+			<ImageView style="@style/PCNAddIcon"
+		    	android:layout_below="@+id/pcn_phone_lo"
+		    	android:id="@+id/pcn_phone_icon"
+		    	android:onClick="onPhoneAddNew"
+		    	android:contentDescription="@string/dummy"
+		    />		 	
+	        <TextView style="@style/PCNAddText"
+	            android:id="@+id/pcn_add_phone"
+	            android:onClick="onPhoneAddNew"
+	            android:layout_below="@+id/pcn_phone_lo"
+	            android:text="@string/pcn_add_phone"/>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_first_rlo"
+            android:layout_below="@+id/first_rlo"
+        	android:layout_height="1dp" />
+	    <!-- End of Add new phone -->
+
+        <!-- Add email address -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/email_rlo"
+	        android:layout_below="@+id/first_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/email_rlo_sep"
+	        	android:layout_height="1dp" />
+	        	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/email_rlo_sep"
+	            android:id="@+id/pcn_email_lo" >
+
+	            <ImageView style="@style/PCNAddImage"
+		            android:id="@+id/pcn_email_image"
+		    	    android:contentDescription="@string/dummy"
+		            android:src="@drawable/prof_row2"
+		            />
+		 	</LinearLayout>
+			<ImageView style="@style/PCNAddIcon"
+		    	android:layout_below="@+id/pcn_email_lo"
+		    	android:id="@+id/pcn_email_icon"
+		    	android:onClick="onEmailAddNew"
+		    	android:contentDescription="@string/dummy"
+		    />		 	
+	        <TextView style="@style/PCNAddText"
+	            android:id="@+id/pcn_add_email"
+	            android:onClick="onEmailAddNew"
+	            android:layout_below="@+id/pcn_email_lo"
+	            android:text="@string/pcn_add_email"/>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_email_rlo"
+            android:layout_below="@+id/email_rlo"
+        	android:layout_height="1dp" />
+	    <!-- End of Add email phone -->
+
+        <!-- Add physical address -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/addr_rlo"
+	        android:layout_below="@+id/email_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/addr_rlo_sep"
+	        	android:layout_height="1dp" />
+	        	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/addr_rlo_sep"
+	            android:id="@+id/pcn_addr_lo" >
+
+	            <ImageView style="@style/PCNAddImage"
+		            android:id="@+id/pcn_addr_image"
+		    	    android:contentDescription="@string/dummy"
+		            android:src="@drawable/prof_row1"
+		            />
+		 	</LinearLayout>
+			<ImageView style="@style/PCNAddIcon"
+		    	android:layout_below="@+id/pcn_addr_lo"
+		    	android:id="@+id/pcn_addr_icon"
+		    	android:onClick="onAddrAddNew"
+		    	android:contentDescription="@string/dummy"
+		    />		 	
+	        <TextView style="@style/PCNAddText"
+	            android:id="@+id/pcn_add_addr"
+	            android:onClick="onAddrAddNew"
+	            android:layout_below="@+id/pcn_addr_lo"
+	            android:text="@string/pcn_add_addr"/>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_addr_rlo"
+            android:layout_below="@+id/addr_rlo"
+        	android:layout_height="1dp" />
+	    <!-- End of Add new physical address -->
+
+        <!-- Add URLs and social -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/url_rlo"
+	        android:layout_below="@+id/addr_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/url_rlo_sep"
+	        	android:layout_height="1dp" />
+	        	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/url_rlo_sep"
+	            android:id="@+id/pcn_url_lo" >
+
+	            <ImageView style="@style/PCNAddImage"
+		            android:id="@+id/pcn_url_image"
+		    	    android:contentDescription="@string/dummy"
+		            android:src="@drawable/prof_row4"
+		            />
+		 	</LinearLayout>
+			<ImageView style="@style/PCNAddIcon"
+		    	android:layout_below="@+id/pcn_url_lo"
+		    	android:id="@+id/pcn_url_icon"
+		    	android:onClick="onUrlAddNew"
+		    	android:contentDescription="@string/dummy"
+		    />		 	
+	        <TextView style="@style/PCNAddText"
+	            android:id="@+id/pcn_add_url"
+	            android:onClick="onUrlAddNew"
+	            android:layout_below="@+id/pcn_url_lo"
+	            android:text="@string/pcn_add_url"/>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_url_rlo"
+            android:layout_below="@+id/url_rlo"
+        	android:layout_height="1dp" />
+	    <!-- End of Add new Urls and Social -->
+
+        <!-- Add Note -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/note_rlo"
+	        android:layout_below="@+id/url_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/note_rlo_sep"
+	        	android:layout_height="1dp" />
+	        	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/note_rlo_sep"
+	            android:id="@+id/pcn_note_lo" >
+
+	            <ImageView style="@style/PCNAddImage"
+		            android:id="@+id/pcn_note_image"
+		    	    android:contentDescription="@string/dummy"
+		            android:src="@drawable/prof_row5"
+		            />
+		 	</LinearLayout>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_note_rlo"
+            android:layout_below="@+id/note_rlo"
+        	android:layout_height="1dp" />
+	    <!-- End of Add note -->
+
+        <!-- Add labels -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/label_rlo"
+	        android:visibility="gone"
+	        android:layout_below="@+id/note_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/label_rlo_sep"
+	        	android:layout_height="1dp" />
+            <ImageView style="@style/PCNAddImage"
+	            android:id="@+id/pcn_label_image"
+		    	android:layout_below="@+id/label_rlo_sep"
+	    	    android:contentDescription="@string/dummy"
+	            android:src="@drawable/prof_row6"
+	            />
+	        <TextView style="@style/PCNAddButton"
+		    	android:layout_below="@+id/label_rlo_sep"
+		        android:id="@+id/tv_label_edit"/>
+	        	        	        
+	        <LinearLayout style="@style/PCNLinear"
+	            android:layout_below="@+id/pcn_label_image"
+	            android:orientation="vertical"
+	            android:id="@+id/pcn_label_lo" />
+		 	
+			<ImageView style="@style/PCNAddIcon"
+		    	android:layout_below="@+id/pcn_label_lo"
+		    	android:id="@+id/pcn_label_icon"
+		    	android:contentDescription="@string/dummy"/>
+					 	
+	        <TextView style="@style/PCNAddText"
+	            android:id="@+id/pcn_add_label"
+	            android:layout_below="@+id/pcn_label_lo"
+	            android:text="@string/pcn_add_label"/>
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_label_rlo"
+            android:layout_below="@+id/label_rlo"
+            android:visibility="gone"
+        	android:layout_height="1dp" />
+	    <!-- End of Add labels -->
+
+        <!-- Add personal notes -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/pnotes_rlo"
+	        android:visibility="gone"
+	        android:paddingBottom="@dimen/pt_mgin_10dp"
+	        android:layout_below="@+id/label_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/pnotes_rlo_sep"
+	        	android:layout_height="1dp" />
+			<!-- Personal Notes and edit text -->
+            <ImageView style="@style/PCNAddImage"
+	            android:id="@+id/pcn_pnotes_image"
+	            android:layout_below="@+id/pnotes_rlo_sep"
+	    	    android:contentDescription="@string/dummy"
+	            android:src="@drawable/prof_row5"
+	            />
+		    <TextView style="@style/PCNAddButton"
+		    	android:layout_below="@+id/pnotes_rlo_sep"
+		        android:id="@+id/tv_pnotes_edit"
+		    />
+            <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_below="@+id/pcn_pnotes_image"
+		    	android:layout_marginLeft="@dimen/profile_side_margin"
+		        android:textColor="@color/profile_add"
+		        android:textSize="@dimen/profile_new_text_size"
+		        android:text="@string/pcn_label_pnotes"
+		        android:id="@+id/tv_pnotes"
+		    />
+		    <EditText style="@style/LFEmail"
+		        android:id="@+id/et_pnotes"
+		        android:layout_below="@+id/tv_pnotes"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginTop="0dp"
+		        android:layout_marginLeft="@dimen/im_margin_60dp"
+		        android:layout_marginRight="@dimen/im_margin_60dp"
+		        android:lines="4"
+		        android:inputType="textShortMessage|textMultiLine"	
+		        android:gravity="top|left"
+		        android:maxLines="10"
+		        android:scrollbars="vertical"
+		        android:hint=""
+		        />		    
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_pnotes_rlo"
+            android:layout_below="@+id/pnotes_rlo"
+            android:visibility="gone"
+        	android:layout_height="1dp" />
+	    <!-- End of Add personal notes -->
+
+        <!-- Add shared profiles -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/share_rlo"
+	        android:visibility="gone"
+	        android:layout_below="@+id/sep_below_pnotes_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/share_rlo_sep"
+	        	android:layout_height="1dp" />
+
+            <ImageView style="@style/PCNAddImage"
+	            android:id="@+id/pcn_share_image"
+		        android:layout_below="@+id/share_rlo_sep"
+	    	    android:contentDescription="@string/dummy"
+	            android:src="@drawable/prof_row3"
+	            />
+       	        	        
+            <!-- Add Shared Profiles and SHARE button -->	
+            <RelativeLayout 
+		        android:id="@+id/pcn_rel_layout"
+		        android:layout_below="@+id/pcn_share_image"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content">
+	            
+	           	<HorizontalScrollView
+			        android:id="@+id/pcn_share_scroll"
+			        android:layout_alignParentLeft="true"
+			        android:layout_toLeftOf="@+id/tv_share_button"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content">
+			        
+			        <LinearLayout
+			            android:id="@+id/share_layout"
+			            android:layout_width="wrap_content"
+			            android:layout_height="wrap_content"
+			            android:layout_marginBottom="20dp"
+			            android:orientation="horizontal" >
+	
+			       	</LinearLayout>
+			        
+			    </HorizontalScrollView>
+			    
+			    <TextView
+			        android:id="@+id/tv_share_button"
+			    	android:layout_width="@dimen/pt_size_100dp"
+			    	android:layout_height="@dimen/pt_size_100dp"
+			    	android:layout_alignParentRight="true"
+			    	android:layout_marginTop="@dimen/pt_mgin_10dp"
+			        android:textColor="@color/white"
+			        android:gravity="center"
+			        android:background="@color/lf_send"
+			        android:textSize="@dimen/profile_new_text_size"
+			        android:text="@string/gm_share"
+			    />
+		           		           	
+		    </RelativeLayout>
+		    <!-- End of Add Shared Profiles and SHARE button -->	
+    	        
+		    <TextView
+		    	android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:layout_marginLeft="@dimen/profile_side_margin"
+		    	android:background="@color/transparency"
+		        android:textColor="@color/black"
+		        android:textSize="@dimen/profile_new_text_size"
+		        android:text="@string/pcn_label_pnotes"
+		        android:id="@+id/tv_share"
+		        android:layout_below="@+id/pcn_rel_layout"
+		    />
+	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_share_rlo"
+            android:layout_below="@+id/share_rlo"
+            android:visibility="gone"
+        	android:layout_height="1dp" />
+	    <!-- End of Add shared profiles -->
+
+        <!-- Add Buttons -->
+	    <RelativeLayout style="@style/PCNRelative"
+	        android:id="@+id/button_rlo"
+	        android:visibility="gone"
+	        android:layout_below="@+id/share_rlo">
+	        <TextView style="@style/PCNSep"
+	            android:id="@+id/button_rlo_sep"
+	        	android:layout_height="1dp" />
+	        
+		    <TextView style="@style/IMSend"
+		        android:layout_below="@+id/button_rlo_sep"
+		        android:text="@string/pcn_delete_contact"
+		        android:id="@+id/tv_button_delete" 
+		        android:background="@color/red"
+		        />
+		    
+		    <TextView style="@style/IMSend"
+		        android:layout_below="@+id/tv_button_delete"
+		        android:text="@string/pcn_add_contact"
+		        android:id="@+id/tv_button_add" 
+		        />
+		    	        	        
+   	    </RelativeLayout>
+        <TextView style="@style/PCNSep"
+            android:id="@+id/sep_below_button_rlo"
+            android:layout_below="@+id/button_rlo"
+            android:visibility="gone"
+        	android:layout_height="1dp" />
+	    <!-- End of Add buttons -->
+
+ 	    	    
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contact_intro_view"
+    android:background="@color/login_congrats_bg" >
+    
+    
+    <TextView style="@style/LRPinText"
+        android:id="@+id/gps_msg_title"
+        android:text="@string/gm_msg_title"
+        />
+    
+    <EditText style="@style/LFEmail"
+        android:id="@+id/gps_msg_cont"
+        android:layout_below="@+id/gps_msg_title"
+        android:layout_marginBottom="@dimen/login_btn_margin_top"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:lines="4"
+        android:inputType="textMultiLine"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:scrollbars="vertical"
+        android:text="@string/gm_msg_hint"
+        />
+    
+    <TextView style="@style/GMSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/ld_add_top_pad"
+        android:layout_below="@+id/gps_msg_cont"
+        android:text="@string/im_send_intro"
+	    android:id="@+id/gm_preview" 
+        />
+    
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_forgot_view"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView style="@style/LFText"
+        android:id="@+id/lfText"
+        />
+    
+    <EditText style="@style/LFEmail"
+        android:inputType="textEmailAddress"
+        android:id="@+id/lfEmail" 
+        />
+
+    <EditText style="@style/LFMobile"
+        android:inputType="phone"
+        android:id="@+id/lfMobile" 
+        />
+    
+    <Button style="@style/LFSend"
+        android:id="@+id/lfSend" 
+        />
+    
+    <TextView style="@style/LFDesc"
+        android:id="@+id/lfDesc"
+        />
+    
+</RelativeLayout>

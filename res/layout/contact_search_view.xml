@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/contact_main_view"
+    android:background="@color/login_congrats_bg" >
+
+    <TextView style="@style/PCNSep"
+    	android:layout_height="1dp" 
+    	android:id="@+id/csv_top_sep"
+    	/>
+    
+    <SearchView
+        android:id="@+id/csv_search"
+        android:layout_below="@+id/csv_top_sep"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:layout_marginTop="@dimen/im_padding_20dp"
+        android:layout_marginBottom="@dimen/im_padding_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lr_hint_bg"
+        android:textColor="@color/lr_hint_fg"
+        android:hint="@string/ss_contact"
+        />
+
+    <!-- 
+    <EditText
+        android:id="@+id/csv_search_et"
+        android:layout_below="@+id/csv_top_sep"
+        android:layout_toRightOf="@+id/csv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/csv_search"
+        android:layout_marginTop  ="@dimen/im_padding_20dp"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:background="@color/lr_hint_bg"
+        android:textColor="@color/lr_hint_fg"
+        android:hint="@string/dummy"
+        />
+         -->
+    
+    <TextView style="@style/PCNSep"
+        android:layout_below="@+id/csv_search"
+    	android:layout_height="1dp" 
+    	android:id="@+id/csv_bottom_sep"
+    	/>
+    
+    
+    <ListView 
+        android:id="@+id/csv_list"
+        android:layout_below="@+id/csv_bottom_sep"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

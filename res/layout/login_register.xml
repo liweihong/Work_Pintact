@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_register_view"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView style="@style/LRErrorMsg"
+        android:id="@+id/lrErrorMsg"
+        />
+    
+    <EditText style="@style/LRFirstName"
+        android:id="@+id/lrFirstName"
+        android:inputType="textCapWords"
+        />
+    
+    <EditText style="@style/LRMiddleName"
+        android:id="@+id/lrMiddleName"
+        android:inputType="textCapWords"
+        />
+    
+    <EditText style="@style/LRLastName"
+        android:id="@+id/lrLastName"
+        android:inputType="textCapWords"
+        />
+
+    <EditText style="@style/LREmail"
+        android:id="@+id/lrEmail"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText style="@style/LRMobile"
+        android:id="@+id/lrMobile"
+        android:inputType="textPassword"
+        />
+	    
+    <!--  
+    <RelativeLayout
+        android:id="@+id/lrTextOR"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/lrMobile"
+	    android:layout_alignLeft="@+id/lrLastName"
+	    android:layout_alignRight="@+id/lrLastName"
+	    android:background="#E6E6E6" >
+	        
+	    <TextView style="@style/LRTextLeftOR"
+	        android:id="@+id/lrTextLeftOR"
+	        />
+	    
+	    <TextView style="@style/LRTextOR"
+	        android:id="@+id/lrTextORInView"
+	        />
+	    
+	    <TextView style="@style/LRTextRightOR"
+	        android:id="@+id/lrTextRightOR"
+	        />
+	</RelativeLayout>
+    
+    <Button style="@style/LRFacebook"
+        android:id="@+id/lrFacebook" 
+        />
+    
+    <Button style="@style/LRTwitter"
+        android:id="@+id/lrTwitter" 
+        />
+        
+     -->
+    
+    <TextView style="@style/LRNext"
+        android:id="@+id/lrNext"
+        />
+    
+</RelativeLayout>

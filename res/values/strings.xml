@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--  Notification Styles -->
+    <string name="nm_invite">INVITES</string>
+    <string name="nm_update">UPDATES</string>
+    
+    <!--  Label Styles -->
+    <string name="lm_add">add labels</string>
+    <string name="lli_labelname">LABEL NAME</string>
+    <string name="lli_add">ADD</string>
+    <string name="lli_delete">DELETE</string>
+    <string name="lm_members">MEMBERS</string>
+    
+    <!--  Group Pin Styles -->
+    <string name="gm_msg">A Group PIN allows you to create a single PIN for a group of people. Anyone who adds that PIN will automatically receive contact invites from everyone in the group.</string>
+    <string name="gm_create">CREATE A NEW GROUP PIN</string>
+    <string name="gm_pin">GROUP PIN</string>
+    <string name="gm_pin_hint">G1476</string>
+    <string name="gm_name">GROUP NAME</string>
+    <string name="gm_expr">EXPIRATION DATE</string>
+    <string name="gm_select_profile">SELECT THE PROFILES TO SHARE</string>
+    <string name="gm_msg_title">PERSONALIZE MESSAGE</string>
+    <string name="gm_msg_hint">Join me in the amazing world of Pintact!</string>
+    <string name="gm_preview">PREVIEW SHARE</string>
+    <string name="gm_share">SHARE</string>
+    <string name="gmn_tab1">Group Created</string>
+    <string name="gmn_tab2">Group Joined</string>
+    <string name="gil_count">1</string>
+    <string name="gil_expdate">Exp</string>
+    
+    <!--  Searching Setting Styles -->
+    <string name="ss_yes">YES, LET\'S ADJUST THAT NOW</string>
+    <string name="ss_no">NO, LET\'S DO THAT LATER</string>
+    <string name="ss_desc">Would like to adjust how people search for you on Pintact?</string>
+    <string name="ss_contact">Type NAME or PIN to begin searching</string>
+    
+    <!--  Invite Page Styles -->
+	<string name="im_msg_title">PERSONALIZE MESSAGE</string>    
+	<string name="im_msg">I would like to invite you to join Pintact-a new way to manage your addressbook. With Pintact you create a unique PIN that you can share with contacts to help find you within the Pintact world. Once found, you can connect with your contact by exchanging contact info profiles. Then if either you or your contact update your profiles, the other party automatically receives the updated information. Isn\'t that neat? \n\n I\'m already a part of the Pintact Universe and want you to join as well. Hope to connect with you soon!</string>    
+	<string name="im_all">Invite All</string>
+	<string name="im_send">SEND INVITES</string>
+	<string name="im_send_intro">SEND INTRODUCTION</string>
+	<string name="im_skip">SKIP</string>
+    <string name="im_invite">
+		<![CDATA[INVITE <b>&gt</b>]]>
+    </string>
+    
+    <!--  Success New Profile Styles -->
+    <string name="pcs_good">
+        <![CDATA[<b>GOOD JOB-</b>YOU\'VE]]>
+    </string>
+    <string name="pcs_good_next">YOU\'VE</string>
+    <string name="pcs_good_next2">MADE YOUR FIRST</string>
+    <string name="pcs_good_next3">PROFILE</string>
+    <string name="pcs_important">Your profile is very important within Pintact.</string>
+    <string name="pcs_desc_first">Any contact with whom you exchange this profile will be able to see the exact information within this profile, no matter how many times you update it. Permanently updating contact information-isn\'t that owesome?</string>
+    <string name="pcs_desc_second">Plus, you can make as many profiles as you want, to share with different people. And you can always unshare a profile with someone if you feel the need.</string>
+    <string name="pcs_desc_last">Now, let\'s go invite some of your contacts to Pintact so that they can enjoy your new profiles!</string>
+    
+    
+    <!--  New Profile Styles -->
+    <string name="profile_new_profile">PROFILE NAME</string>
+    <string name="pcn_first_name">FIRST NAME</string>
+    <string name="pcn_last_name">LAST NAME</string>
+    <string name="pcn_title">TITLE</string>
+    <string name="pcn_company">COMPANY</string>
+    <string name="pcn_add_phone">add phone number</string>
+    <string name="pcn_add_email">add email address</string>
+    <string name="pcn_add_addr">add physical address</string>
+    <string name="pcn_add_url">add urls and social</string>
+    <string name="pcn_add_label">assign a label to this contact</string>
+    <string name="pcn_label_pnotes">Personal Notes</string>
+    <string name="pcn_label_phone">Phone</string>
+    <string name="pcn_label_email">Email</string>
+    <string name="pcn_label_addr">Address</string>
+    <string name="pcn_label_url">Twitter</string>
+    <string name="pcn_label_note">Notes</string>
+    <string name="pcn_btn_delete">DELETE</string>
+    <string name="pcn_delete_contact">DELETE CONTACT</string>
+    <string name="pcn_add_contact">ADD TO ADDRESS BOOK</string>
+    <string name="pcn_field_name">Field Name</string>
+    <string name="pcn_field_value">FIELD VALUE</string>
+    <string name="pcn_addr_line1">ADDRESS</string>
+    <string name="pcn_addr_city">CITY</string>
+    <string name="pcn_addr_state">STATE</string>
+    <string name="pcn_addr_zip">ZIP</string>
+    	
+	<!--  Left Deck Menu Styles -->
+    <string name="ldm_add_pintact">ADD NEW PINTACT</string>
+    <string name="ldm_contact">Contacts</string>
+    <string name="ldm_group">Group PIN</string>
+    <string name="ldm_label">Labels</string>
+    <string name="ldm_notify">Notifications</string>
+    <string name="ldm_profile">Profiles</string>
+    <string name="ldm_setting">Settings</string>
+    
+    <!--  First Login Page  -->
+    <string name="login_how_work">HOW PINTACT WORKS</string>
+    <string name="login_pin_email">PIN/EMAIL ADDRESS</string>
+    <string name="login_pwd">PASSWORD</string>
+    <string name="login_login">LOG IN</string>
+    <string name="login_logout">LOG OUT</string>
+    <string name="login_forgot_pwd">FORGOT PASSWORD?</string>
+    <string name="login_no_pin_yet">NO PIN YET?</string>
+    <string name="login_register">REGISTER ></string>
+    
+    
+    <string name="app_name">Pintact</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_item_list">Items</string>
+    <string name="title_item_detail">Item Detail</string>
+    <string name="title_navigation_drawer">Left Deck Menu</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="action_websearch">Web search</string>
+    <string name="imageDesc">Image Description</string>
+    <string name="app_not_available">Sorry, there\'s no web browser available</string>    
+
+    
+    <string name="search_button">Go</string>
+    <string name="search_text_view">search your Pintacts</string>
+    <string name="ppl_text_view">PEOPLE</string>
+    <string name="search_list_view">Barack Obama</string>
+    <string name="left_deck_notify">Notifications</string>
+    <string name="left_deck_group">Group PIN</string>
+    <string name="left_deck_label">Labels</string>
+    <string name="left_deck_label1">friends</string>
+    <string name="left_deck_label2">Yale 2012</string>
+    <string name="left_deck_label3">Add Label</string>
+    <string name="left_deck_profile">Profiles</string>
+    <string name="left_deck_setting">Settings</string>
+    <string name="dummy"></string>
+    <string name="initial">WW</string>
+    <string name="profile_name">Barack Obama</string>
+    <string name="profile_title">President\nUnited States</string>
+    <string name="profile_group">USA1234</string>
+    
+    <!--  Setting page styles -->
+    <string name="set_contact_sync">USER INFORMATION</string>
+    <string name="set_sync_with">Sort Settings</string>
+    <string name="set_security">SETTINGS</string>
+    <string name="set_broadcast">Show Native Contacts</string>
+    <string name="set_search_set">Push Notifications</string>
+    <string name="set_support">GENERAL</string>
+    <string name="set_policy">Email Support</string>
+    <string name="set_term">About Pintact</string>
+    <string name="set_invite">Inivte a Friend</string>
+    <string name="set_feedback">Feedback</string>
+    <string name="set_arrow">></string>
+    <string name="set_sort1">SORT BY FIRST NAME</string>
+    <string name="set_sort2">SORT BY LAST NAME</string>
+    <string name="set_sort_setting">Pintact.Settings.Sort</string>
+    <string name="set_show_native_contacts">Pintact.Settings.Local.Contacts</string>
+    <string name="set_push_notifications">Pintact.Settings.Push.Notifications</string>
+    <string name="login_username">Pintact.Login.UserName</string>
+    <string name="login_password">Pintact.Login.PassWord</string>
+    <!-- 
+    <string name="set_arrow">
+        <![CDATA[<b>&gt</b>]]>
+    </string>
+     -->
+    
+    <!--  Login Register Success page styles -->
+    <string name="lrs_congrats">CONGRATULATIONS</string>
+    <string name="lrs_unique">Your PIN is a unique identifier within Pintact.</string>
+    <string name="lrs_new_pin">ON YOUR NEW PIN</string>
+    <string name="lrs_pin">kvm2289</string>
+    <string name="lrs_description">Share it with anyone so they can more easily connect with you. And, by the way, as long as you keep your contact information up-to-day, it will automatically sync with your contact\'s Pintact Address Book. You have total control over what your contacts know about you.</string>
+    <string name="lrs_pintact">Pintact.  Never Lose Contact.</string>
+    <string name="lrs_create_profile">
+        <![CDATA[CREATE A PROFILE <b>&gt</b>]]>
+   	</string>
+    
+    <!--  Login Register Pin page strings -->
+    <string name="lrpin_text">PLEASE CREATE A PIN BELOW:</string>
+    <string name="lrp_num_hint">#</string>
+    <string name="lrpin_err_msg">PIN AREADY REGISTERED. PLEASE TRY AGAIN.</string>
+    <string name="lrp_send_hint">AUTO-GENERATE PIN DIGITS</string>
+    <string name="lrp_desc">A PIN is your unique ID. Make this something easy to remember, as your contacts will find you within PinPlanet with the help of this PIN.</string>
+    <string name="lrp_text_back">
+        <![CDATA[<b>&lt</b> BACK]]>
+    </string>
+    <string name="lrp_text_finish">
+        <![CDATA[FINISH <b>&gt</b>]]>
+    </string>
+    
+    <!--  Login Register page strings -->
+    <string name="lr_error_msg"> 
+		<![CDATA[PLEASE ENTER A MIDDLE INITIAL. IF YOU DON\'T HAVE ONE, SELECT <font color="#FF8037"><i><b>NEXT</b></i></font> BELOW.]]>
+	</string>
+    <string name="lr_first_name">FIRST NAME</string>
+    <string name="lr_middle_name">M.I.</string>
+    <string name="lr_last_name">LAST NAME</string>
+    <string name="lr_text_or"> OR </string>
+    <string name="lr_facebook"> 
+		<![CDATA[REGISTER WITH <b>FACEBOOK</b>]]>
+	</string>
+    <string name="lr_twitter"> 
+		<![CDATA[REGISTER WITH <b>TWITTER</b>]]>
+	</string>
+    <string name="lr_text_next"> 
+		<![CDATA[NEXT <b>&gt</b>]]>
+	</string>
+    
+    <!--  Login Forgot page strings -->
+    <string name="lf_text_hint">ENTER EMAIL OR MOBILE NUMBER TO RESET PASSWORD:</string>
+    <string name="lf_text_email_hint">EMAIL ADDRESS</string>    
+    <string name="lf_text_mobile_hint">MOBILE NUMBER</string>  
+    <string name="lf_send_hint">SEND RESET INSTRUCTIONS</string>  
+    <string name="lf_desc">Password reset instructions will be sent to your credentials above."</string>
+    
+    <!--  Action Bar strings -->
+    <string name="action_bar_option">NEXT</string>  
+    <string name="ab_forgot">FORGOT PASSWORD</string>  
+    <string name="ab_register">REGISTER</string>  
+    <string name="ab_register_success">WELCOME</string>  
+    <string name="ab_profile">PROFILE</string>  
+    <string name="ab_pin">CREATE A PIN</string>  
+    <string name="ab_setting">SETTINGS</string>  
+    <string name="ab_new_profile">CREATE A PROFILE</string>  
+    <string name="ab_new_profile_success">MAIN</string>  
+    <string name="ab_invite_all">INVITE CONTACTS</string>  
+    <string name="ab_contact_all">ALL CONTACTS</string>  
+    <string name="ab_invite_add">ADD A CONTACT</string>  
+    <string name="ab_search_person">SEARCH PERSON</string>  
+    <string name="ab_group_pin">GROUP PIN</string>  
+    <string name="ab_label">LABELS</string>  
+    <string name="ab_notify">NOTIFICATIONS</string>  
+    <string name="ab_edit">EDIT</string>  
+    <string name="ab_new">NEW</string>  
+    <string name="ab_done">DONE</string>
+    <string name="ab_accept">ACCEPT</string>
+    <string name="ab_invite">INVITE</string>
+    <string name="ab_cancel">X</string>
+    <string name="ab_group_info">ADD GROUP INFO</string>
+    <string name="ab_group_add">ADD FRIEND</string>
+    <string name="ab_pintroduce">PINTRODUCE</string>
+    
+</resources>

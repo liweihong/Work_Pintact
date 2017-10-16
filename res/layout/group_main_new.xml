@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_main_view"
+    android:background="@color/login_congrats_bg" >
+
+    <LinearLayout
+        android:id="@+id/gmn_tab" 
+        android:background="@drawable/border_profile_thumb_invite" 
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+        
+	    <TextView  
+	        android:id="@+id/gmn_tab1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="4dp"
+	        android:padding="@dimen/im_padding_20dp"
+	        android:text="@string/gmn_tab1"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:textSize="@dimen/csl_small"
+	        android:textColor="@color/white"
+	        android:background="@color/lf_send"
+	        android:textStyle="normal" />
+        
+	    <TextView 
+	        android:id="@+id/gmn_tab2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_margin="4dp"
+	        android:padding="@dimen/im_padding_20dp"
+	        android:text="@string/gmn_tab2"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:textColor="@color/lf_send"
+	        android:textSize="@dimen/csl_small"
+	        android:textStyle="normal" />
+	    
+    </LinearLayout>
+    <ScrollView
+	    android:layout_below="@+id/gmn_tab"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content">
+	    
+		<LinearLayout
+		    android:id="@+id/gmn_list"
+		    android:orientation="vertical"
+	        android:layout_width = "match_parent"
+	        android:layout_height="wrap_content">
+		    
+		</LinearLayout>
+		
+	</ScrollView>
+	
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@anim/background_listview" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+	    <TextView style="@style/LLIText"
+	    	android:textColor="@color/black"
+	    	android:layout_toLeftOf="@+id/view_add"
+	    	android:padding="10dp"
+	    	android:visibility="invisible"
+	    	android:id="@+id/label_view"
+	    />
+	    
+	    <EditText style="@style/LLIText"
+	    	android:textColorHint="@color/profile_title"
+	    	android:layout_toLeftOf="@+id/view_add"
+	    	android:padding="10dp"
+	    	android:hint="@string/lli_labelname"	
+	    	android:id="@+id/label_input"
+	    />
+	    
+	    <TextView style="@style/LLICmd"
+	    	android:background="@color/lf_send"
+	    	android:textColor="@color/white"
+	    	android:text="@string/lli_add"
+	    	android:id="@+id/view_add"
+	    />
+
+	    <TextView style="@style/LLICmd"
+	    	android:background="@color/red"
+	    	android:textColor="@color/white"
+	    	android:text="@string/lli_delete"
+	    	android:id="@+id/view_delete"
+	    	android:visibility="invisible"
+	    />
+	    
+	    <ImageView style="@style/IMBottom"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/im_margin_60dp"
+	        android:contentDescription="@string/dummy"
+	        android:src="@drawable/circle"
+	        android:id="@+id/label_check"
+	        android:visibility="invisible"
+	        />	    
+	    
+	    <TextView
+	    	android:layout_width="match_parent"
+	    	android:layout_height="1dp"
+	    	android:layout_below="@+id/view_add"
+	    	android:layout_marginLeft="@dimen/profile_side_margin"
+	    	android:background="@color/lr_hint_bg"
+	        />
+	    
+</RelativeLayout>

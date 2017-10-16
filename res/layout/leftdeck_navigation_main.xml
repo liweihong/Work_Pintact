@@ -1,0 +1,155 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+
+<!-- A DrawerLayout is intended to be used as the top-level content view using match_parent for both width and height to consume the full space available. -->
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- As the main content view, the view below consumes the entire
+         space available using match_parent in both dimensions. -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+	<RelativeLayout  
+        android:id="@+id/left_drawer"
+        android:layout_width="@dimen/left_deck_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"	    
+	    android:background="@color/black" >
+	
+	    	<!--  For "ADD NEW PINTACT" -->
+			<TextView style="@style/LDMAdd"
+			    android:id="@+id/ldm_add_pintact" />
+			    
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_add_pintact"
+			    android:id="@+id/ldm_sep_add" />
+	
+			<!--  For "Contacts" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_add"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/ldm_profile"
+			    android:id="@+id/ldm_im_contact" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_contact"
+			    android:layout_alignTop="@+id/ldm_im_contact"
+			    android:layout_alignBottom="@+id/ldm_im_contact"
+			    android:text="@string/ldm_contact" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_contact"
+			    android:id="@+id/ldm_sep_contact" />
+			
+			<!--  for "Group PIN" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_contact"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/left_row2_1"
+			    android:id="@+id/ldm_im_group" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_group"
+			    android:layout_alignTop="@+id/ldm_im_group"
+			    android:layout_alignBottom="@+id/ldm_im_group"
+			    android:text="@string/ldm_group" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_group"
+			    android:id="@+id/ldm_sep_group" />
+			
+			<!--  for "Label" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_group"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/left_row3_1"
+			    android:id="@+id/ldm_im_label" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_label"
+			    android:layout_alignTop="@+id/ldm_im_label"
+			    android:layout_alignBottom="@+id/ldm_im_label"
+			    android:text="@string/ldm_label" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_label"
+			    android:id="@+id/ldm_sep_label" />
+			
+			<!--  for "Notification" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_label"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/left_row1_1"
+			    android:id="@+id/ldm_im_notify" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_notify"
+			    android:layout_alignTop="@+id/ldm_im_notify"
+			    android:layout_alignBottom="@+id/ldm_im_notify"
+			    android:text="@string/ldm_notify" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_notify"
+			    android:id="@+id/ldm_sep_notify" />
+			
+			<!--  for "Profile" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_notify"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/left_row4_1"
+			    android:id="@+id/ldm_im_profile" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_profile"
+			    android:layout_alignTop="@+id/ldm_im_profile"
+			    android:layout_alignBottom="@+id/ldm_im_profile"
+			    android:text="@string/ldm_profile" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_profile"
+			    android:id="@+id/ldm_sep_profile" />
+			
+			<!--  for "Settings" -->
+			<ImageView style="@style/LDMImage"
+			    android:layout_below="@+id/ldm_sep_profile"
+			    android:contentDescription="@string/dummy"
+			    android:src="@drawable/left_row5_1"
+			    android:id="@+id/ldm_im_setting" />
+			
+			<TextView style="@style/LDMOption"
+			    android:id="@+id/ldm_tv_setting"
+			    android:layout_alignTop="@+id/ldm_im_setting"
+			    android:layout_alignBottom="@+id/ldm_im_setting"
+			    android:text="@string/ldm_setting" />
+	
+			<TextView style="@style/LDMSep"
+			    android:layout_below="@+id/ldm_im_setting"
+			    android:id="@+id/ldm_sep_setting" />
+									
+			
+				
+	</RelativeLayout>       
+
+    
+</android.support.v4.widget.DrawerLayout>

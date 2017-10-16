@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/actionbar_main_view"
+    android:orientation="vertical" >
+    
+    <ImageButton
+        android:id="@+id/actionBarMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/show_left_deck"
+        android:layout_alignParentLeft="true"
+        android:clickable="true"
+        android:background="@anim/background_imagebtn"
+        android:contentDescription="@string/imageDesc"
+        android:layout_marginLeft="10dp" />
+        
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/actionBarLeft"
+        android:background="@color/white"
+        android:layout_toRightOf="@+id/actionBarMenu"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:id="@+id/actionBar"
+        android:textColor="@color/action_bar_fg"
+        android:textSize="@dimen/ab_text_size" />
+    
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:id="@+id/actionBarRight"
+        android:background="@color/white"
+        android:layout_toLeftOf="@+id/actionBarBtn"
+        android:layout_marginRight="@dimen/ab_right_bar_20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/ab_right_btn_10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/actionBarBtn"
+        android:text="@string/action_bar_option"
+        android:textStyle="bold"
+        android:textColor="@color/action_bar_fg"
+        android:textSize="@dimen/ab_button_size" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/ab_right_btn_10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/export_icon"
+        android:background="@anim/background_imagebtn"
+        android:id="@+id/actionBarRightImage"
+        android:visibility="gone" />"
+    
+</RelativeLayout>

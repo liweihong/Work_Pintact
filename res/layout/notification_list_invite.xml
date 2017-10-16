@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@anim/background_listview"
+    >
+
+	<RelativeLayout 
+	    android:layout_width="@dimen/nt_initial_size"
+	    android:layout_height="@dimen/nt_initial_size"
+	    android:clickable="true"
+	    android:layout_margin="@dimen/nt_initial_mgin_20dp"
+	    android:id="@+id/nli_lo"
+	    android:background="@drawable/border_notification_initial" 
+	    >
+    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:id="@+id/nli_initial"
+	        android:textStyle="normal"
+	        android:textColor="@color/lf_text"
+	        android:textSize="@dimen/nt_initial_ts_25sp"
+	        android:text="@string/initial"
+	        />
+	        
+	</RelativeLayout>
+	
+	<TextView 
+	    android:layout_width="4dp"
+	    android:layout_height="@dimen/nt_initial_mgin_20dp"
+	    android:background="@color/lr_hint_bg"
+	    android:layout_marginLeft="@dimen/nt_initial_left"
+	    />
+
+	<TextView 
+	    android:layout_width="4dp"
+	    android:layout_height="@dimen/nt_initial_mgin_20dp"
+	    android:background="@color/lr_hint_bg"
+	    android:layout_marginLeft="@dimen/nt_initial_left"
+	    android:layout_marginTop="@dimen/nt_initial_top"
+	    />
+	
+	<!--  the height = 60 + 20 + 20 -->
+	<!--  the marginLeft = 20 + 60 + 20 -->
+	<!--  should replace this id with the other one -->
+	<TextView
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/nt_text_height"
+	    android:layout_marginLeft="@dimen/nt_text_magin_left"
+	    android:gravity="center_vertical|left"
+	    android:textColor="@color/black"
+	    android:textStyle="bold"
+	    android:textSize="@dimen/nt_initial_ts_25sp"
+	    android:text="@string/dummy"
+	    android:id="@+id/nli_name" />
+				
+	<!--  for icons -->
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/nt_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/nt_button_magin_right1"	 
+        android:layout_centerVertical="true"   
+	    android:id="@+id/nli_accept"
+	    android:background="@drawable/border_notify_accept" 
+	    >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/nt_initial_mgin_10dp"
+	        android:layout_marginBottom="@dimen/nt_initial_mgin_10dp"
+		    android:clickable="true"
+		    android:onClick="onAcceptInvite"
+	        android:gravity="center"
+	        android:id="@+id/nli_accept_tv"
+	        android:textStyle="bold"
+	        android:textColor="@color/lf_send"
+	        android:textSize="@dimen/nt_initial_ts_25sp"
+	        android:text="@string/ab_accept"
+	        />
+	    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/for_data"
+	        android:visibility="gone"
+	        />
+	    	        
+	</RelativeLayout>	
+
+	<RelativeLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/nt_button_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/nt_button_magin_right2"	 
+        android:layout_centerVertical="true"   
+	    android:visibility="gone"
+	    android:id="@+id/nli_cxl"
+	    android:background="@drawable/border_notify_accept" 
+	    >
+    
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="@dimen/nt_initial_mgin_10dp"
+	        android:layout_marginBottom="@dimen/nt_initial_mgin_10dp"
+	        android:layout_marginLeft="@dimen/nt_initial_mgin_20dp"
+	        android:paddingRight="@dimen/nt_initial_mgin_20dp"
+	        android:gravity="center"
+	        android:id="@+id/nli_cxl_tv"
+		    android:clickable="true"
+		    android:onClick="onRejectInvite"	        
+	        android:textStyle="bold"
+	        android:textColor="@color/lf_send"
+	        android:textSize="@dimen/nt_initial_ts_25sp"
+	        android:text="@string/ab_cancel"
+	        />
+	        
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:id="@+id/for_data1"
+	        android:visibility="gone"
+	        />
+	    	        
+	</RelativeLayout>	
+							
+</RelativeLayout>

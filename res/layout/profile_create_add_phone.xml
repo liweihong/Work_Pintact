@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <EditText
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:background="@color/transparency"
+        android:textColor="@color/profile_add"
+        android:textSize="@dimen/profile_new_text_size"
+        android:text="@string/pcn_label_phone"
+    	android:singleLine="true"
+    	android:textColorHint="@color/profile_title"
+        android:hint="@string/pcn_field_name"
+        android:id="@+id/input_label"
+    />
+    
+    <EditText
+        android:layout_below="@+id/input_label"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:layout_alignParentLeft="true"
+    	android:layout_toLeftOf="@+id/view_id1"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:textColorHint="@color/profile_title"
+    	android:gravity="left"
+    	android:singleLine="true"
+    	android:inputType="phone"
+    	android:background="@color/transparency"
+    	android:hint="@string/pcn_field_value"	
+    	android:id="@+id/input_id1"
+    />
+    
+    <TextView
+    	android:layout_width="wrap_content"
+    	android:layout_height="match_parent"
+    	android:layout_alignParentRight="true"
+    	android:padding="10dp"
+    	android:gravity="center_vertical"
+    	android:background="@color/red"
+    	android:clickable="true"
+    	android:text="@string/pcn_btn_delete"
+        android:textSize="@dimen/profile_new_text_size"
+    	android:id="@+id/view_id1"
+    />
+    
+    <TextView
+    	android:layout_width="match_parent"
+    	android:layout_height="1dp"
+    	android:layout_below="@+id/input_id1"
+    	android:layout_marginTop="10dp"
+    	android:layout_marginLeft="@dimen/profile_side_margin"
+    	android:background="@color/lr_hint_bg"
+        android:id="@+id/phone_sep"
+        />
+    
+    
+
+</RelativeLayout>

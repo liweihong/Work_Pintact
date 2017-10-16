@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="@dimen/ld_parent_pad_5dp"
+    android:paddingRight="@dimen/ld_parent_pad_5dp"
+    android:paddingTop="@dimen/ld_parent_pad_10dp"
+    android:paddingBottom="@dimen/ld_parent_pad_10dp"    
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:contentDescription="@string/imageDesc"
+        android:layout_marginLeft="@dimen/ld_parent_pad_10dp"
+        android:paddingLeft="@dimen/ld_parent_pad_10dp"
+        android:paddingRight="@dimen/ld_parent_pad_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_row1_1" />
+
+    <TextView
+        android:id="@+id/OptionTxt"
+        android:text="@string/left_deck_notify"
+        android:paddingLeft="@dimen/ld_parent_pad_20dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="@dimen/left_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/lr_hint_bg"
+        android:clickable="true"
+        android:onClick="onMenuClicked"        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   	<ImageView
+        android:id="@+id/imageFunc"
+        android:contentDescription="@string/imageDesc"
+        android:layout_gravity="center_vertical"
+        android:paddingRight="@dimen/ld_parent_pad_10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_row1_2" />
+
+
+</LinearLayout>

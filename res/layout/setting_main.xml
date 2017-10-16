@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/white">
+    
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <!-- Sync -->
+	    
+	    <TextView style="@style/SetItem"
+	        android:text="@string/set_contact_sync"
+	        android:id="@+id/set_contact_sync" />
+	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_contact_sync"
+	        android:id="@+id/set_item_sep1" />
+	    	    
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_sep1"
+	        android:text="@string/set_sync_with"
+	        android:id="@+id/set_sync_with" />
+	    
+	    <TextView style="@style/SetArrow"
+	        android:layout_below="@+id/set_item_sep1"
+	        android:layout_toRightOf="@+id/set_sync_with"
+	        android:text="@string/set_arrow"
+	        android:id="@+id/set_sort_set1" />
+	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_sync_with"
+	        android:id="@+id/set_item_sep2" />
+	    	    
+	    <!-- Security -->
+
+	    <TextView style="@style/SetItem"
+	        android:text="@string/set_security"
+	        android:layout_below="@+id/set_item_sep2"
+	        android:id="@+id/set_security" />
+	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_security"
+	        android:id="@+id/set_item_sep3" />
+	    	    
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_sep3"
+	        android:text="@string/set_broadcast"
+	        android:id="@+id/set_broadcast" />
+	    
+	    <!--  is show local -->
+	    <Switch style="@style/SetSwitch"
+	        android:layout_below="@+id/set_item_sep3"
+	        android:layout_toRightOf="@+id/set_broadcast"
+	        android:id="@+id/set_broadcast_switch" />
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_broadcast"
+	        android:id="@+id/set_sub_item_sep1" />
+	    <!--  end of show native -->
+	    	    	    
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_sub_item_sep1"
+	        android:text="@string/set_search_set"
+	        android:id="@+id/set_search_set" />
+	    
+	    <Switch style="@style/SetSwitch"
+	        android:layout_below="@+id/set_sub_item_sep1"
+	        android:layout_toRightOf="@+id/set_search_set"
+	        android:id="@+id/set_push_switch" />
+	    <!--  end of push notification -->
+	    	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_push_switch"
+	        android:id="@+id/set_item_support1" />
+	    	    
+	    <!-- Support -->
+
+	    <TextView style="@style/SetItem"
+	        android:text="@string/set_support"
+	        android:layout_below="@+id/set_item_support1"
+	        android:id="@+id/set_support" />
+	    
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_support"
+	        android:id="@+id/set_item_support2" />
+	    	    
+	    <!-- 
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_support2"
+	        android:text="@string/set_policy"
+	        android:id="@+id/set_policy" />
+
+	    <TextView style="@style/SetArrow"
+	        android:layout_below="@+id/set_item_support2"
+	        android:layout_toRightOf="@+id/set_policy"
+	        android:text="@string/set_arrow"
+	        android:id="@+id/set_policy1" />
+	    	    
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_policy"
+	        android:id="@+id/set_policy_sep" />
+	    -->
+	    <!-- About Pintact -->	    
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_item_support2"
+	        android:text="@string/set_term"
+	        android:id="@+id/set_term" />
+	    
+	    <TextView style="@style/SetArrow"
+	        android:layout_below="@+id/set_item_support2"
+	        android:layout_toRightOf="@+id/set_term"
+	        android:text="@string/set_arrow"
+	        android:id="@+id/set_term1" />
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_term"
+	        android:id="@+id/set_term_sep" />
+	    
+	    <!-- invite a friend --> 
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_term_sep"
+	        android:text="@string/set_invite"
+	        android:id="@+id/set_reset_pwd" />
+	    
+	    <TextView style="@style/SetArrow"
+	        android:layout_below="@+id/set_term_sep"
+	        android:layout_toRightOf="@+id/set_reset_pwd"
+	        android:text="@string/set_arrow"
+	        android:id="@+id/set_reset_pwd1" />
+	    
+	    <TextView style="@style/SetSubItemSep"
+	        android:layout_below="@+id/set_reset_pwd"
+	        android:id="@+id/set_sub_item_sep2" />
+	    	    	    
+	    <!-- feed back -->
+	    <TextView style="@style/SetSubItem"
+	        android:layout_below="@+id/set_sub_item_sep2"
+	        android:text="@string/set_feedback"
+	        android:clickable="true"
+	        android:onClick="onFeedBackClicked"
+	        android:id="@+id/set_feedback" />
+	    
+	    <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/set_sub_item_sep2"
+	        android:textStyle="bold"
+	        android:clickable="true"
+	        android:onClick="logout"
+	        android:background="@color/lf_send"
+	        android:textColor="@color/white"
+	        android:textSize="@dimen/set_sub_item_text_size"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/set_pad_item_left"
+	        android:padding="@dimen/set_pad_sub_item_top"
+	        android:text="@string/login_logout"
+	        android:id="@+id/set_logout" />
+	    	    	    	
+	    <TextView style="@style/SetItemSep"
+	        android:layout_below="@+id/set_feedback"
+	        android:id="@+id/set_item_logout1" />
+	    	    
+	    
+	    	    	    
+	</RelativeLayout>
+
+</ScrollView>

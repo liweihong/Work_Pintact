@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+    
+	<RelativeLayout 
+	    android:id="@+id/glv_title" 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	   	android:paddingTop="@dimen/im_padding_10dp"
+	   	android:paddingBottom="@dimen/im_padding_10dp"
+	   	android:background="@drawable/group_pin_header" >
+	
+	    <TextView  style="@style/CSLText"
+	        android:layout_marginTop="@dimen/im_padding_20dp"
+	        android:id="@+id/gil_name"
+	        android:layout_width="wrap_content"
+	        android:paddingLeft="@dimen/im_padding_20dp"
+	        android:text="@string/gm_pin"
+	        android:textSize="@dimen/csl_small"
+	        android:textStyle="normal" />
+	
+	    <TextView style="@style/CSLText"
+	        android:textStyle="bold"
+	        android:layout_below="@+id/gil_name"
+	        android:text="@string/gm_pin_hint"
+	        android:textSize="@dimen/csl_big"
+	        android:textColor="@color/lf_send"
+	        android:paddingLeft="@dimen/im_padding_20dp"
+	        android:id="@+id/gil_title"
+	        />
+	
+	    <!-- member icons and number | expiry date icon -->
+	    <ImageView 
+	        android:id="@+id/gil_arrow"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:src="@drawable/right_arrow"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:visibility="invisible"
+			android:contentDescription="@string/dummy"
+			/>
+	    
+	    <!--  27d/Exp -->
+	    <TextView 
+	        android:id="@+id/gil_expdate"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/gil_arrow"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:textStyle="bold"
+			android:textColor="@color/lr_hint_bg"
+			android:textSize="@dimen/csl_small"
+			android:text="@string/gil_expdate"
+			/>
+	    
+	    <!-- time icon -->
+	    <ImageView 
+	        android:id="@+id/gil_time"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:src="@drawable/group_time_list"
+	        android:layout_toLeftOf="@+id/gil_expdate"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/dummy"
+			/>
+		
+	    <!--  vertical sep -->
+	    <TextView style="@style/PCNSep"
+	        android:id="@+id/gil_sep_vertical"
+	        android:layout_width="4dp"
+	        android:layout_height="40dp"
+	        android:layout_toLeftOf="@+id/gil_time"
+			android:layout_centerVertical="true"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+	        />
+	    
+	    <!--  member count -->
+	    <TextView 
+	        android:id="@+id/gil_memcount"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:layout_toLeftOf="@+id/gil_sep_vertical"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:textStyle="bold"
+			android:textColor="@color/lr_hint_bg"
+			android:textSize="@dimen/csl_small"
+			android:text="@string/gil_count"
+			/>
+	    
+	    <!-- profile icon -->
+	    <ImageView 
+	        android:id="@+id/gil_profile"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        android:src="@drawable/group_person_list"
+	        android:layout_toLeftOf="@+id/gil_memcount"
+	        android:layout_marginRight="@dimen/im_padding_20dp"
+			android:layout_centerVertical="true"
+			android:contentDescription="@string/dummy"
+			/>
+		
+	</RelativeLayout>
+
+    <TextView style="@style/PCNSep"
+        android:layout_below="@+id/glv_title" 
+    	android:layout_height="1dp" 
+    	android:id="@+id/csv_top_sep"
+    	/>
+    
+    <TextView style="@style/SetItem"
+        android:text="@string/lm_members"
+        android:layout_below="@+id/csv_top_sep"
+        android:id="@+id/set_contact_sync" />
+    
+    <ListView 
+        android:id="@+id/llv_list"
+        android:layout_below="@+id/set_contact_sync"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</RelativeLayout>

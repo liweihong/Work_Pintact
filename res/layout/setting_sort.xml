@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioButton
+        android:id="@+id/set_sort_kind1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/set_sub_item_text_size"
+        android:checked="true"
+        android:layout_margin="@dimen/set_pad_sub_item_top"
+        android:text="@string/set_sort1" />
+
+    <RadioButton
+        android:id="@+id/set_sort_kind2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/set_pad_sub_item_top"
+        android:textSize="@dimen/set_sub_item_text_size"
+        android:text="@string/set_sort2" />
+
+</LinearLayout>

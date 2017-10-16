@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/im_padding_10dp"
+    android:paddingBottom="@dimen/im_padding_10dp"
+    android:background="@anim/background_listview" >
+
+    <ImageView style="@style/IMBottom"
+        android:layout_width="@dimen/im_margin_40dp"
+        android:layout_height="@dimen/im_margin_40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/silhouette"
+        android:id="@+id/im_photo"
+        />
+
+    <TextView style="@style/IMBottom"
+        android:layout_toRightOf="@+id/im_photo"
+        android:layout_marginLeft="@dimen/im_margin_100dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="@string/im_all"
+        android:id="@+id/im_name"
+        />
+    
+    <ImageView style="@style/IMBottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:contentDescription="@string/dummy"
+        android:src="@drawable/circle"
+        android:id="@+id/im_check"
+        />
+
+    <!--
+    <TextView style="@style/PCNSep"
+        android:layout_below="@+id/im_check"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        android:layout_marginRight="@dimen/im_margin_60dp"
+        android:layout_marginTop="@dimen/im_margin_40dp"
+    	android:layout_height="1dp" 
+    	/>
+    	-->
+    
+</RelativeLayout>

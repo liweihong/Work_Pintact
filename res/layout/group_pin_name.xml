@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/group_pin_view"
+    android:background="@color/login_congrats_bg" >
+    
+    <TextView style="@style/LRPinText"
+        android:id="@+id/gpn_pin_tv"
+        android:text="@string/gm_pin"
+        />
+    
+    <TextView style="@style/LFEmail"
+        android:layout_below="@+id/gpn_pin_tv"
+        android:layout_alignLeft="@+id/gpn_pin_tv"
+        android:layout_alignRight="@+id/gpn_pin_tv"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gp_color"
+        android:textColorHint="@color/gp_color"
+        android:id="@+id/gm_pin" 
+        />
+
+    <TextView style="@style/LRPinText"
+        android:id="@+id/gpn_name_tv"
+        android:layout_below="@+id/gm_pin"
+        android:text="@string/gm_name"
+        />
+    
+    
+    <EditText style="@style/LFEmail"
+        android:layout_below="@+id/gpn_name_tv"
+        android:layout_alignLeft="@+id/gpn_pin_tv"
+        android:layout_alignRight="@+id/gpn_pin_tv"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gp_color"
+        android:hint="@string/dummy"
+        android:id="@+id/gm_name" 
+        />
+
+    <TextView style="@style/LRPinText"
+        android:id="@+id/gpn_expr_tv"
+        android:layout_below="@+id/gm_name"
+        android:text="@string/gm_expr"
+        />
+
+    <DatePicker
+        android:id="@+id/gpn_date"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gpn_expr_tv"
+        android:layout_below="@+id/gpn_expr_tv"
+		/>
+
+    <!-- 
+    <TimePicker
+        android:id="@+id/gpn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gpn_expr_tv"
+        android:layout_below="@+id/gpn_date"
+        />
+        
+	 -->        
+    
+</RelativeLayout>

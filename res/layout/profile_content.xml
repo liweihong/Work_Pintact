@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <!--  This is profile image part -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:background="@color/profile_sep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        
+        <ImageView style="@style/ProfImage"
+            android:id="@+id/ProfileimageView"
+            android:contentDescription="@string/imageDesc"
+            android:src="@drawable/images" />
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:paddingTop="@dimen/text_top_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView style="@style/ProfName"
+                    android:id="@+id/tvName" />
+
+                <TextView style="@style/ProfTitle"
+                    android:id="@+id/tvTitle" />
+
+                <TextView style="@style/ProfGroup"
+                    android:id="@+id/tvGroup" />
+                </LinearLayout>
+        </ScrollView>
+    </TableRow>
+
+    <ExpandableListView 
+        android:id="@+id/profExListView"
+        android:layout_height="wrap_content"
+        android:groupIndicator="@null"
+        android:layout_width="wrap_content" />
+    
+</TableLayout>

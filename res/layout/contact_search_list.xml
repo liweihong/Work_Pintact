@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/im_padding_10dp"
+    android:paddingBottom="@dimen/im_padding_10dp"
+    android:background="@anim/background_listview" >
+
+
+	<RelativeLayout 
+	    android:layout_width="@dimen/cam_initial_size"
+	    android:layout_height="@dimen/cam_initial_size"
+        android:layout_marginLeft="@dimen/im_padding_20dp"	 
+	    android:id="@+id/csl_photo"
+	    android:background="@drawable/border_profile_thumb_init" 
+	    >
+    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:id="@+id/csl_init"
+	        android:textStyle="normal"
+	        android:textColor="@color/lf_text"
+	        android:textSize="@dimen/cam_initial_text"
+	        android:text="@string/initial"
+	        />
+	        
+	</RelativeLayout>
+
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+        android:layout_centerVertical="true"   
+	    android:layout_toRightOf="@+id/csl_photo"
+        android:layout_marginLeft="@dimen/im_margin_60dp"
+        >
+
+	    <TextView style="@style/CSLText"
+	        android:textStyle="bold"
+	        android:text="@string/im_all"
+	        android:textSize="@dimen/csl_big"
+	        android:id="@+id/csl_name"
+	        />
+
+	    <TextView style="@style/CSLText"
+	        android:layout_below="@+id/csl_name"
+	        android:text="@string/search_list_view"
+	        android:textSize="@dimen/csl_small"
+	        android:id="@+id/csl_phone"
+	        />
+	    	    
+    </RelativeLayout>
+    
+	<RelativeLayout 
+	    android:layout_width="@dimen/cam_invite_width"
+	    android:layout_height="@dimen/cam_invite_height"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/im_padding_20dp"	 
+        android:layout_centerVertical="true"   
+	    android:id="@+id/csl_invite"
+	    android:background="@drawable/border_profile_thumb_invite" 
+	    >
+    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center"
+	        android:id="@+id/csl_invite_tv"
+	        android:textStyle="bold"
+	        android:textColor="@color/lf_send"
+	        android:textSize="@dimen/cam_invite_text"
+	        android:text="@string/ab_invite"
+	        />
+	        
+	</RelativeLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,1136 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+	<style name="MyTextViewStyle" parent="android:Widget.TextView">
+	    <item name="android:background">@anim/background_textview</item>
+	</style>
+	 	 	 
+	<style name="MyImageButtonStyle" parent="android:Widget.ImageButton">
+	    <item name="android:background">@anim/background_imagebtn</item>
+	</style>
+	 	 	 
+	<style name="MyActivityAnimationStyle" parent="android:Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+	 	 	 
+	<!-- Application theme. -->
+    <style name="MyAppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textViewStyle">@style/MyTextViewStyle</item>
+        <item name="android:imageButtonStyle">@style/MyImageButtonStyle</item>
+        <item name="android:windowAnimationStyle">@style/MyActivityAnimationStyle</item>
+   	</style>
+
+    <!--  Alert dialog styles  -->
+    <style name="AlertDialogCustom" parent="@android:style/DeviceDefault.ButtonBar.AlertDialog">
+        <item name="android:gravity">center</item>
+    </style>
+        
+    <!--  Label List styles -->
+    <style name="LLIText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/profile_side_margin</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:background">@color/transparency</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+	</style>
+
+    <style name="LLICmd">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:background">@color/transparency</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+	</style>
+    
+    <!--  Group Pin Styles -->
+    <style name="GMMessage">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:paddingTop">@dimen/im_margin_40dp</item>
+        <item name="android:paddingBottom">@dimen/im_padding_10dp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/gm_text_size_31sp</item>
+	</style>
+    
+    <style name="GMSend">
+		<item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/im_padding_20dp</item>
+        <item name="android:paddingBottom">@dimen/im_padding_20dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/lf_send</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/im_text_size_25sp</item>
+    </style>
+        
+    
+    <!--  Searching Setting Styles -->
+    <style name="PMIcon">
+		<item name="android:layout_width">@dimen/cam_image_size</item>
+		<item name="android:layout_height">@dimen/cam_image_size</item>
+		<item name="android:layout_marginTop">@dimen/im_margin_60dp</item>
+	</style>
+	
+    <style name="CAMImage">
+		<item name="android:layout_width">@dimen/cam_image_size</item>
+		<item name="android:layout_height">@dimen/cam_image_size</item>
+		<item name="android:layout_marginTop">@dimen/im_margin_60dp</item>
+	</style>
+    
+	<style name="CSLText">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+		<item name="android:gravity">left</item>
+   	</style>    
+    
+    
+    <!--  Searching Setting Styles -->
+    <style name="SSDesc">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold|italic</item>
+        <item name="android:paddingTop">@dimen/im_padding_20dp</item>
+        <item name="android:paddingBottom">@dimen/im_padding_20dp</item>
+		<item name="android:layout_marginTop">@dimen/im_padding_20dp</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">38sp</item>
+    </style>
+    
+    <!--  Invite Page Styles -->
+    <style name="IMSend">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/im_padding_20dp</item>
+        <item name="android:paddingBottom">@dimen/im_padding_20dp</item>
+        <item name="android:layout_marginTop">@dimen/im_padding_20dp</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/lf_send</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/im_text_size_25sp</item>
+    </style>
+    
+    <style name="IMPersonal">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/im_margin_40dp</item>
+        <item name="android:paddingBottom">@dimen/im_padding_10dp</item>
+        <item name="android:paddingLeft">@dimen/im_margin_40dp</item>
+        <item name="android:paddingRight">@dimen/im_margin_40dp</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">@dimen/im_text_size_22sp</item>
+    </style>
+    
+    <style name="IMBottom">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerVertical">true</item>
+        <item name="android:textColor">@color/lr_next_color</item>
+        <item name="android:textSize">@dimen/login_nav_size</item>
+	</style>
+    
+    <style name="IMTop">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">@dimen/im_margin_40dp</item>
+    </style>
+    
+    <!--  Success New Profile Styles -->
+    <style name="PCSGood">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:textSize">@dimen/pcs_ts_45sp</item>
+    </style>
+    
+    <style name="PCSGoodSec">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:layout_marginTop">1dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:textSize">@dimen/pcs_ts_45sp</item>
+    </style>
+    
+    <style name="PCSSep">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+    </style>
+    
+    <!--  New Profile Styles -->
+    <style name="PCNProfileName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+		<item name="android:layout_marginTop">@dimen/profile_new_top</item>
+        <item name="android:layout_marginLeft">@dimen/profile_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/profile_side_margin</item>
+        <item name="android:paddingTop">@dimen/profile_padding_h</item>
+        <item name="android:paddingBottom">@dimen/profile_padding_h</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+        <item name="android:hint">@string/profile_new_profile</item>
+    </style>
+    
+    <style name="PCNSep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+    </style>
+    
+    <style name="PCNAddImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginLeft">@dimen/profile_side_margin</item>
+        <item name="android:src">@drawable/add_an_image</item>
+    </style>
+    
+    <style name="PCNAddButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/profile_side_margin</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+        <item name="android:text">@string/ab_edit</item>
+    </style>
+    
+    <style name="PCNTitleName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/profile_item_top</item>
+        <item name="android:lines">1</item>
+        <item name="android:inputType">textCapWords</item>
+        <item name="android:gravity">left</item>
+        <item name="android:background">@color/transparency</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+        <item name="android:textColorHint">@color/profile_title</item>
+    </style>
+
+    <style name="PCNAddIcon">
+        <item name="android:layout_width">@dimen/pcn_icon_size</item>
+        <item name="android:layout_height">@dimen/pcn_icon_size</item>
+        <item name="android:layout_marginLeft">@dimen/profile_side_margin</item>
+		<item name="android:layout_marginTop">@dimen/profile_item_top</item>
+        <item name="android:clickable">true</item>
+        <item name="android:src">@drawable/plus_green</item>
+    </style>
+    
+    <style name="PCNAddText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_marginLeft">@dimen/profile_side_margin_80dp</item>
+		<item name="android:layout_marginTop">@dimen/profile_item_top</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/lf_send</item>
+        <item name="android:textSize">@dimen/profile_new_text_size</item>
+    </style>
+    
+    <style name="PCNRelative">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/profile_new_top</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    
+    <style name="PCNLinear">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    
+	<!--  Left Deck Menu Styles -->
+    <style name="LDMAdd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginTop">@dimen/ld_add_margin_pad</item>
+        <item name="android:layout_marginLeft">@dimen/ld_add_margin_pad_left</item>
+        <item name="android:layout_marginRight">@dimen/ld_add_margin_pad_left</item>
+        <item name="android:paddingTop">@dimen/ld_add_top_pad</item>
+        <item name="android:paddingBottom">@dimen/ld_add_top_pad</item>
+        <item name="android:paddingLeft">@dimen/ld_add_left_pad</item>
+        <item name="android:paddingRight">@dimen/ld_add_left_pad</item>
+        <item name="android:background">@color/lf_send</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/left_deck_text_size</item>
+        <item name="android:text">@string/ldm_add_pintact</item>
+    </style>
+    
+    <style name="LDMSep">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">@dimen/ld_sep_top_pad</item>
+        <item name="android:layout_marginLeft">@dimen/ld_sep_left_pad</item>
+        <item name="android:background">@color/white</item>
+    </style>
+    
+    <style name="LDMImage">
+        <item name="android:layout_width">@dimen/ld_image_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/ld_sep_top_pad</item>
+        <item name="android:layout_marginLeft">@dimen/ld_sep_left_pad</item>
+    </style>
+    
+    <style name="LDMOption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onMenuClicked</item>
+        <item name="android:layout_marginLeft">@dimen/ld_optoin_left_pad</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/left_deck_option_text_size</item>
+    </style>
+    
+    <!--  Setting Main page styles -->
+    <style name="SetItem">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@color/profile_sep</item>
+		<item name="android:textColor">@color/lf_text</item>
+		<item name="android:gravity">bottom</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/set_item_text_size</item>
+		<item name="android:paddingTop">@dimen/set_pad_item_top</item>
+		<item name="android:paddingBottom">@dimen/set_pad_item_bottom</item>
+		<item name="android:paddingLeft">@dimen/set_pad_item_left</item>
+	</style>
+    
+    <style name="SetItemSep">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">@color/lf_text</item>
+	</style>
+
+    <style name="SetSubItem">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:textColor">@color/set_sub_item</item>
+		<item name="android:gravity">left|center</item>
+		<item name="android:textSize">@dimen/set_sub_item_text_size</item>
+		<item name="android:paddingTop">@dimen/set_pad_sub_item_top</item>
+		<item name="android:paddingBottom">@dimen/set_pad_sub_item_top</item>
+		<item name="android:paddingLeft">@dimen/set_pad_item_left</item>
+	</style>
+    
+    <style name="SetSwitch">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:gravity">right</item>
+		<item name="android:layout_marginRight">@dimen/set_pad_item_left</item>
+		<item name="android:paddingTop">@dimen/set_pad_sub_item_top</item>
+		<item name="android:paddingBottom">@dimen/set_pad_sub_item_top</item>
+	</style>
+
+    <style name="SetSubItemSep">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">1dp</item>
+		<item name="android:background">@color/lf_text</item>
+		<item name="android:layout_marginLeft">@dimen/set_pad_item_left</item>
+		<item name="android:layout_marginRight">@dimen/set_pad_item_left</item>
+	</style>
+
+    <style name="SetArrow">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:textColor">@color/set_sub_item</item>
+		<item name="android:gravity">right</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textSize">@dimen/set_sub_item_text_size</item>
+		<item name="android:layout_marginRight">@dimen/set_pad_item_left</item>
+		<item name="android:paddingTop">@dimen/set_pad_sub_item_top</item>
+		<item name="android:paddingBottom">@dimen/set_pad_sub_item_top</item>
+	</style>
+
+    
+    <!--  Login Register Success page styles -->
+    <style name="LRSLayout">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:background">@drawable/border_login_success</item>
+		</style>
+    
+    <style name="LRSCong">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:text">@string/lrs_congrats</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:textSize">@dimen/lrs_text_size_30sp</item>
+    </style>
+    
+    <style name="LRSNewPin">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_below">@+id/lrsCong</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:text">@string/lrs_new_pin</item>
+		<item name="android:textSize">@dimen/lrs_text_size_30sp</item>
+    </style>
+    
+    <style name="LRSPin">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:paddingTop">@dimen/lrs_pad_margin</item>
+		<item name="android:paddingBottom">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_below">@+id/lrsNewPin</item>
+		<item name="android:background">@color/white</item>
+		<item name="android:textColor">@color/lf_send</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:gravity">center</item>
+		<item name="android:text">@string/lrs_pin</item>
+		<item name="android:textSize">@dimen/lrs_text_size_35sp</item>
+    </style>
+    
+    <style name="LRSUniq">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">italic|bold</item>
+		<item name="android:layout_below">@+id/lrsPin</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_10dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:text">@string/lrs_unique</item>
+		<item name="android:textSize">@dimen/lrs_text_size_15sp</item>
+    </style>
+    
+    <style name="LRSDesc">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:layout_centerHorizontal">true</item>
+		<item name="android:textStyle">italic</item>
+		<item name="android:layout_below">@+id/lrsUniq</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:text">@string/lrs_description</item>
+		<item name="android:textSize">@dimen/lrs_text_size_15sp</item>        
+    </style>
+    
+    <style name="LRSPintact">
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:layout_height">wrap_content</item>
+		<item name="android:textStyle">italic|bold</item>
+		<item name="android:layout_below">@+id/lrsDesc</item>
+		<item name="android:layout_marginTop">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:layout_marginLeft">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginRight">@dimen/lrs_pad_margin</item>
+		<item name="android:layout_marginBottom">@dimen/lrs_pad_margin</item>
+		<item name="android:paddingBottom">@dimen/lrs_pad_margin_30dp</item>
+		<item name="android:textColor">@color/white</item>
+		<item name="android:text">@string/lrs_pintact</item>
+		<item name="android:textSize">@dimen/lrs_text_size_18sp</item>        
+    </style>
+    
+    <style name="LRSProfile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onNewProfile</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textColor">@color/lr_next_color</item>
+        <item name="android:textSize">@dimen/login_nav_size</item>
+        <item name="android:text">@string/lrs_create_profile</item>
+    </style>
+    
+    <!--  Login Register Pin Create page styles -->
+    <style name="LRPinText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:hint">@string/lrpin_text</item>
+    </style>
+    
+    <style name="LRPinInitial">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrPinText</item>
+        <item name="android:layout_marginTop">@dimen/login_forgot_top</item>
+        <item name="android:layout_alignLeft">@+id/lrPinText</item>
+        <item name="android:layout_alignRight">@+id/lrPinText</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/lrp_text_size</item>
+        <item name="android:hint">"   k v m   "</item>
+    </style>
+    
+    <style name="LRPinSend">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrPinInitial</item>
+        <item name="android:layout_alignLeft">@+id/lrPinText</item>
+        <item name="android:layout_alignRight">@+id/lrPinText</item>
+        <item name="android:background">@color/lf_send</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onDummy</item>
+        <item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:hint">@string/lrp_send_hint</item>
+    </style>
+    
+    <style name="LRPinDesc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrPinSend</item>
+        <item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:layout_alignLeft">@+id/lrPinText</item>
+        <item name="android:layout_alignRight">@+id/lrPinText</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/lrp_desc_text_size</item>
+        <item name="android:hint">@string/lrp_desc</item>
+    </style>
+    
+    <style name="LRBack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignLeft">@+id/lrPinText</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/lr_next_color</item>
+        <item name="android:lines">1</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_nav_size</item>
+        <item name="android:hint">@string/lrp_text_back</item>
+    </style>
+    
+    <style name="LRFinish">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignRight">@+id/lrPinText</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_toRightOf">@+id/lrBack</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textColor">@color/lr_next_color</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_nav_size</item>
+        <item name="android:hint">@string/lrp_text_finish</item>
+    </style>
+    
+    <!--  Login Register page styles -->
+    <style name="LRErrorMsg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrGA</item>
+        <item name="android:background">@color/lr_err_bg</item>
+        <item name="android:textColor">@color/lr_err_fg</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/login_register_err_size</item>
+		<item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:hint">@string/lr_error_msg</item>
+    </style>
+    
+    <style name="LRFirstName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:layout_below">@+id/lrErrorMsg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+		<item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_toLeftOf">@+id/lrMiddleName</item>
+        <item name="android:hint">@string/lr_first_name</item>
+    </style>
+    
+    <style name="LRMiddleName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_below">@+id/lrErrorMsg</item>
+		<item name="android:layout_alignParentRight">true</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:paddingLeft">@dimen/login_btn_margin_top</item>
+        <item name="android:paddingRight">@dimen/login_btn_margin_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:hint">@string/lr_middle_name</item>
+    </style>
+
+    <style name="LRLastName">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrFirstName</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:hint">@string/lr_last_name</item>
+    </style>
+    
+    <style name="LREmail">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrLastName</item>
+        <item name="android:layout_alignLeft">@+id/lrLastName</item>
+        <item name="android:layout_alignRight">@+id/lrLastName</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:hint">@string/lf_text_email_hint</item>
+    </style>
+    
+    <style name="LRMobile">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrEmail</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:layout_alignLeft">@+id/lrLastName</item>
+        <item name="android:layout_alignRight">@+id/lrLastName</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:hint">@string/login_pwd</item>
+    </style>
+    
+    <style name="LRTextLeftOR">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_toLeftOf">@+id/lrTextORInView</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">15dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+    </style>
+    
+    <style name="LRTextRightOR">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_toRightOf">@+id/lrTextORInView</item>
+        <item name="android:layout_marginRight">15dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+    </style>
+    
+    <style name="LRTextOR">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrMobile</item>
+        <item name="android:textColor">@color/lr_hint_fg</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic|bold</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:hint">@string/lr_text_or</item>
+    </style>
+    
+    <style name="LRFacebook">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrTextOR</item>
+        <item name="android:layout_alignLeft">@+id/lrLastName</item>
+        <item name="android:layout_alignRight">@+id/lrLastName</item>
+        <item name="android:background">@color/lr_facebook</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/login_pad_bottom</item>
+        <item name="android:paddingBottom">@dimen/login_pad_bottom</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/lr_facebook</item>
+    </style>
+    
+    <style name="LRTwitter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lrFacebook</item>
+        <item name="android:layout_alignLeft">@+id/lrLastName</item>
+        <item name="android:layout_alignRight">@+id/lrLastName</item>
+        <item name="android:background">@color/lr_twitter</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">@dimen/login_pad_bottom</item>
+        <item name="android:paddingBottom">@dimen/login_pad_bottom</item>
+        <item name="android:layout_marginTop">@dimen/login_item_margin_pad</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:ems">10</item>
+        <item name="android:hint">@string/lr_twitter</item>
+    </style>
+    
+    <style name="LRNext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_alignLeft">@+id/lrLastName</item>
+        <item name="android:layout_alignRight">@+id/lrLastName</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textColor">@color/lr_next_color</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">@dimen/login_nav_size</item>
+        <item name="android:hint">@string/lr_text_next</item>
+    </style>
+    
+    <!--  Login Forgot page styles -->
+    <style name="LFText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginLeft">@dimen/login_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/login_side_margin</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:hint">@string/lf_text_hint</item>
+    </style>
+    
+    <style name="LFEmail">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lfText</item>
+        <item name="android:layout_alignLeft">@+id/lfText</item>
+        <item name="android:layout_alignRight">@+id/lfText</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_nopin_text_size</item>
+        <item name="android:hint">@string/lf_text_email_hint</item>
+    </style>
+    
+    <style name="LFMobile">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lfEmail</item>
+        <item name="android:layout_alignLeft">@+id/lfText</item>
+        <item name="android:layout_alignRight">@+id/lfText</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingTop">@dimen/login_forgot_top</item>
+        <item name="android:paddingBottom">@dimen/login_forgot_top</item>
+        <item name="android:background">@color/lr_hint_bg</item>
+        <item name="android:textColorHint">@color/lr_hint_fg</item>
+        <item name="android:textSize">@dimen/login_nopin_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/lf_text_mobile_hint</item>
+    </style>
+    
+    <style name="LFSend">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lfMobile</item>
+        <item name="android:layout_alignLeft">@+id/lfText</item>
+        <item name="android:layout_alignRight">@+id/lfText</item>
+        <item name="android:background">@color/lf_send</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onDummy</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:hint">@string/lf_send_hint</item>
+    </style>
+    
+    <style name="LFDesc">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_below">@+id/lfSend</item>
+        <item name="android:layout_alignLeft">@+id/lfText</item>
+        <item name="android:layout_alignRight">@+id/lfText</item>
+        <item name="android:textColor">@color/lf_text</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:textSize">@dimen/lrp_desc_text_size</item>
+        <item name="android:ems">14</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:hint">@string/lf_desc</item>
+    </style>
+    
+    <!--  Login page styles -->
+    <style name="LoginUserText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:inputType">textEmailAddress</item>
+        <item name="android:hint">@string/login_pin_email</item>
+        <item name="android:paddingTop">@dimen/login_pad_bottom</item>
+        <item name="android:paddingBottom">@dimen/login_pad_bottom</item>
+        <item name="android:background">@color/login_hint_bg</item>
+        <item name="android:textColorHint">@color/login_hint_fg</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:ems">@integer/login_size_ems</item>
+    </style>
+    
+    <style name="LoginPassText">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/userText</item>
+        <item name="android:layout_alignLeft">@+id/userText</item>
+        <item name="android:layout_alignRight">@+id/userText</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">@string/login_pwd</item>
+        <item name="android:inputType">textPassword</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:paddingTop">@dimen/login_pad_bottom</item>
+        <item name="android:paddingBottom">@dimen/login_pad_bottom</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:background">@color/login_hint_bg</item>
+        <item name="android:textColorHint">@color/login_hint_fg</item>
+    </style>
+
+    <style name="LoginBtn">
+    	<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/passText</item>
+        <item name="android:layout_alignLeft">@+id/userText</item>
+        <item name="android:layout_alignRight">@+id/userText</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onLogin</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/login_login</item>
+        <item name="android:layout_marginTop">@dimen/login_btn_margin_top</item>
+        <item name="android:paddingTop">@dimen/login_btn_pad</item>
+        <item name="android:paddingBottom">@dimen/login_btn_pad</item>
+        <item name="android:textSize">@dimen/login_text_size</item>
+        <item name="android:background">@anim/background_loginbtn</item>
+        <item name="android:textColor">@color/login_btn_fg</item>
+    </style>
+
+    <style name="LoginForget">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onForgot</item>
+        <item name="android:text">@string/login_forgot_pwd</item>
+        <item name="android:layout_below">@+id/loginBtn</item>
+        <item name="android:layout_alignLeft">@+id/userText</item>
+        <item name="android:layout_alignRight">@+id/passText</item>
+        <item name="android:textColor">@color/login_forgot</item>
+        <item name="android:layout_marginTop">@dimen/login_forgot_top</item>
+        <item name="android:textSize">@dimen/login_forgot_text_size</item>
+        <item name="android:ems">10</item>
+  	</style>
+    
+    <style name="LoginHowWork">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onTest</item>
+        <item name="android:text">@string/login_how_work</item>
+        <item name="android:layout_below">@+id/loginForget</item>
+        <item name="android:layout_alignLeft">@+id/userText</item>
+        <item name="android:layout_alignRight">@+id/passText</item>
+        <item name="android:layout_marginTop">@dimen/login_hw_top</item>
+        <item name="android:textColor">@color/login_how_work</item>
+        <item name="android:textSize">@dimen/login_hw_text_size</item>
+        <item name="android:ems">10</item>
+  	</style>
+    
+    <style name="LoginNoPin">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onLogin</item>
+        <item name="android:text">@string/login_no_pin_yet</item>
+        <item name="android:layout_below">@+id/loginHowWork</item>
+        <item name="android:layout_marginTop">@dimen/login_hw_top</item>
+        <item name="android:layout_alignLeft">@+id/userText</item>
+        <item name="android:textColor">@color/login_forgot</item>
+        <item name="android:textSize">@dimen/login_nopin_text_size</item>
+  	</style>
+
+    <style name="LoginRegister">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/loginHowWork</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:onClick">onRegister</item>
+        <item name="android:text">@string/login_register</item>
+        <item name="android:layout_alignRight">@+id/passText</item>
+        <item name="android:layout_toRightOf">@+id/loginNoPin</item>
+        <item name="android:textColor">@color/login_register</item>
+        <item name="android:textSize">@dimen/login_nopin_text_size</item>
+        <item name="android:layout_marginTop">@dimen/login_hw_top</item>
+        <item name="android:layout_marginLeft">15dp</item>
+    </style>
+    
+    <!--  Profile content page styles -->
+    <style name="ProfImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/image_botton_margin</item>
+        <item name="android:paddingLeft">@dimen/image_left_margin</item>
+        <item name="android:paddingRight">@dimen/image_right_margin</item>
+        <item name="android:paddingTop">@dimen/image_top_margin</item>
+	</style>
+	
+    <style name="ProfName" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:text">@string/profile_name</item>
+    </style>
+
+    <style name="ProfTitle" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:paddingTop">@dimen/text_vertical</item>
+        <item name="android:text">@string/profile_title</item>
+    </style>
+
+    <style name="ProfGroup" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/text_vertical</item>
+        <item name="android:text">@string/profile_group</item>
+    </style>
+
+    <style name="ContTR">
+        <item name="android:background">@color/white</item>
+        <item name="android:paddingTop">@dimen/icon_image_margin</item>
+        <item name="android:paddingBottom">@dimen/icon_image_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DummyTR">
+        <item name="android:background">@color/profile_sep</item>
+        <item name="android:paddingBottom">@dimen/profile_separate</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="ContLeftImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/icon_image_margin</item>
+    </style>
+
+    <style name="ContDummyText" parent="@android:style/TextAppearance.Large">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:clickable">true</item>
+        <item name="android:text">@string/dummy</item>
+    </style>
+    
+    <style name="ContRightImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/text_vertical</item>
+        <item name="android:paddingRight">@dimen/icon_prof_right_margin</item>
+    </style>
+    
+    <style name="DummyTRThin">
+        <item name="android:background">@color/profile_sep</item>
+        <item name="android:paddingBottom">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="HideTR">
+        <item name="android:background">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    
+    <style name="NoteTR" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/profile_note_pad_10dp</item>
+        <item name="android:paddingBottom">@dimen/profile_note_pad_10dp</item>
+        <item name="android:paddingLeft">@dimen/text_prof_left_margin</item>
+        <item name="android:textColor">@color/profile_note</item>
+    </style>
+    
+    <style name="NoteContTR" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">@dimen/profile_note_pad_10dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">@dimen/text_prof_left_margin</item>
+    </style>
+
+    <style name="DummyNoteTV" parent="@android:style/TextAppearance.Medium">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:text">@string/dummy</item>
+    </style>
+    
+</resources>

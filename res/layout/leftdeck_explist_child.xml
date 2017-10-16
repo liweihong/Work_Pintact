@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:paddingLeft="@dimen/left_margin_label_expand"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:orientation="horizontal" >
+    
+    <ImageView
+        android:id="@+id/imageLabel31"
+        android:contentDescription="@string/imageDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/left_row3_s1" />
+
+    <TextView
+        android:id="@+id/Label1TV"
+        android:text="@string/left_deck_label1"
+        android:paddingLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:textSize="@dimen/left_text_size_expand"
+        android:textStyle="italic"
+        android:textColor="#CCCCCC"
+        android:clickable="true"
+        android:onClick="onMenuClicked"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+   	<ImageView
+        android:id="@+id/imagelabel32"
+        android:contentDescription="@string/imageDesc"
+        android:paddingRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMenuClicked"
+        android:src="@drawable/left_row3_s2" />
+   	
+</LinearLayout>

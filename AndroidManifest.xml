@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pintact"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />	
+    
+    <permission android:name="com.pintact.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.pintact.permission.C2D_MESSAGE" />
+        
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/MyAppTheme" >
+        
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <category android:name="com.pintact" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".GcmIntentService" />
+		<meta-data android:name="com.google.android.gms.version"
+           	android:value="@integer/google_play_services_version" />
+                 
+        <activity
+            android:name="com.pintact.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.pintact.LeftDeckActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.login.LoginForgotActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.login.LoginRegisterActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.login.LoginRegisterPINActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.login.LoginRegisterSuccessActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.setting.SettingMainActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.label.LabelMainActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.label.LabelContactsActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.setting.SettingSortActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.profile.ProfileNewActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.profile.ProfileViewActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.profile.ProfileViewNewActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.profile.ProfileNewSuccessActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactIntroduceListActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactIntroduceActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactInviteActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactInviteMsgActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactAddActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactFindActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.contact.ContactSearchPersonActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.profile.ProfileShareActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.group.GroupContactsActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.group.GroupPinActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.pintact.group.GroupProfileShareActivity"
+            android:screenOrientation="sensorPortrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.pintact.MainActivity" />
+        </activity>
+        <meta-data android:name="com.crashlytics.ApiKey" android:value="cdd08e0e217dd10f0dbe9d3e94f9d4db96f7d794"/>
+        
+ 	</application>
+
+</manifest>

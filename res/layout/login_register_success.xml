@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_congrats_bg" >
+
+    <RelativeLayout style="@style/LRSLayout" >
+        
+        <TextView style="@style/LRSCong" 
+            android:id="@+id/lrsCong"
+            />
+            
+        <TextView style="@style/LRSNewPin" 
+            android:id="@+id/lrsNewPin"
+            />
+            
+        <TextView style="@style/LRSPin" 
+            android:id="@+id/lrsPin"
+            />
+        
+        <TextView style="@style/LRSUniq" 
+            android:id="@+id/lrsUniq"
+            />
+            
+        <TextView style="@style/LRSDesc" 
+            android:id="@+id/lrsDesc"
+            />
+            
+        <TextView style="@style/LRSPintact" 
+            android:id="@+id/lrsPintact"
+            />
+        
+   	</RelativeLayout>
+    
+    <TextView style="@style/LRSProfile"
+        android:id="@+id/lrsProfile"
+        />
+    
+</RelativeLayout>

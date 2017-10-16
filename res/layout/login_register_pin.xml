@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login_pin_view"
+    android:background="#E6E6E6" >
+    
+    <TextView style="@style/LRPinText"
+        android:id="@+id/lrPinText"
+        />
+    
+    <EditText style="@style/LRPinInitial"
+        android:id="@+id/lrPinInitial" 
+        />
+
+    <Button style="@style/LRPinSend"
+        android:id="@+id/lrPinSend" 
+        />
+    
+    <TextView style="@style/LRPinDesc"
+        android:id="@+id/lrPinDesc"
+        />
+    
+    <TextView style="@style/LRBack"
+        android:id="@+id/lrBack"
+        />
+
+    <TextView style="@style/LRFinish"
+        android:id="@+id/lrFinish"
+        />
+    
+</RelativeLayout>
